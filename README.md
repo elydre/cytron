@@ -35,7 +35,7 @@ print(cy.cy_ls("/"))
 <u>Syntaxe:</u>
 
 ```py
-cy.cy_version()
+cy_version()
 ```
 <u>Exemple:</u>
 
@@ -50,7 +50,7 @@ print(cy.cy_version())
 <u>Syntaxe:</u>
 
 ```py
-cy.cy_path()
+cy_path()
 ```
 <u>Exemple:</u>
 
@@ -65,7 +65,7 @@ print(cy.cy_path())
 <u>Syntaxe:</u>
 
 ```py
-cy.cy_mkdir(chemin, nom)
+cy_mkdir(chemin, nom)
 ```
 <u>Exemple:</u>
 
@@ -80,7 +80,7 @@ cy.cy_mkdir("/", "coucou")
 <u>Syntaxe:</u>
 
 ```py
-cy.cy_mkfil(chemin, nom, ContenuDuFichier)
+cy_mkfil(chemin, nom, ContenuDuFichier)
 ```
 <u>Exemple:</u>
 
@@ -95,7 +95,7 @@ cy.cy_mkfil("/", "livre.txt","Il était un fois une clé usb...")
 <u>Syntaxe:</u>
 
 ```py
-cy.cy_rfil_rela(chemin, nom):
+cy_rfil_rela(chemin, nom):
 ```
 <u>Exemple:</u>
 
@@ -110,7 +110,7 @@ print(cy.cy_rfil_rela("/", "livre.txt"))
 <u>Syntaxe:</u>
 
 ```py
-cy.cy_wget(chemin, nom, url):
+cy_wget(chemin, nom, url):
 ```
 <u>Exemple:</u>
 
