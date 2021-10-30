@@ -120,12 +120,12 @@ cy.mkfil("/", "telechargement.ica", "https://raw.githubusercontent.com/passembla
 
 ## <b> Terminal intégré </b>
 
-Cytron possède aussi un terminal intégré accessible avec <i>console_print()</i>.
+Cytron possède aussi un terminal intégré accessible avec <i>console()</i>.
 se petit programme de 4 ligne l'utilise pour créé un petit terminal simplement
 
 ```py
 import cytron as cy
-cy.console_print()
+cy.console()
 while True:
     pass
 ```
