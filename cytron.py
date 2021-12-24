@@ -33,7 +33,7 @@ from _thread import start_new_thread
 
 global path_v, version, console_o
 
-version_id = "cytron 15 (beta)"
+version_id = "cytron 15"
 
 console_o = False
 path_v = os.path.dirname(sys.argv[0])
