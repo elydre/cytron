@@ -1,7 +1,7 @@
 # Démarrage rapide
 ## Description
 Cytron est un module permettant d’interagir avec les dossier et fichier du système d’exploitation.
-## **Installation
+## Installation
 Téléchargez le repository, et déplacez cytron.py dans le dossier de votre programme.
 
 ## Importation
