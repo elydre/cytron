@@ -83,7 +83,7 @@ def mkfil(chem, nom, text):
     fil.close()
     return("DONE")
 
-def rfil_rela(chem, nom):
+def rfil(chem, nom):
     temp = path_v + chem + "/" + nom
     try:
         fil = open(temp, "r")
@@ -106,7 +106,7 @@ class File:
         return self.read()
 
     def read(self) -> str:
-        return rfil_rela(self.chem, self.nom)
+        return rfil(self.chem, self.nom)
     
     def make(self, text: str) -> str:
         return mkfil(self.chem, self.nom, text)
@@ -152,7 +152,7 @@ def run(ipt):
         try: return(ls(ipt[1]))
         except: return("erreur: 'chem rela'")
     elif ipt[0] == "rfil":                                  # rfil
-        try: return(rfil_rela(ipt[1], ipt[2]))
+        try: return(rfil(ipt[1], ipt[2]))
         except: return("erreur: 'chem rela + nom'")
     elif ipt[0] == "exit":                                  # exit
         return("exit")
@@ -178,5 +178,5 @@ def cy_mkdir(chem, nom):        return(mkdir(chem, nom))
 def cy_wget(chem, nom, addr):   return(wget(chem, nom, addr))
 def cy_mkfil(chem, nom, text):  return(mkfil(chem, nom, text))
 def cy_rfil(chem):              return(open(chem, "r").read())
-def cy_rfil_rela(chem, nom):    return(rfil_rela(chem, nom))
+def cy_rfil_rela(chem, nom):    return(rfil(chem, nom))
 def cy_run(ipt):                return(run(ipt))

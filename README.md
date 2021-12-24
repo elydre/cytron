@@ -1,126 +1,88 @@
-# <b>CYTRON</b>
-## <b> Démarrage rapide </b>
-### <b> Description </b>
+# Démarrage rapide
+## Description
 Cytron est un module permettant d’interagir avec les dossier et fichier du système d’exploitation.
-### <b> Installation </b>
+## **Installation
 Téléchargez le repository, et déplacez cytron.py dans le dossier de votre programme.
 
-### <b> Importation </b>
+## Importation
 ```py
 import cytron as cy 
 ```
-## <b> Interaction </b>
+# Fonctions
 
-<i> Ci dessous le notion de ‘chemin’ se réfère au chemin relatif ayant comme racine le dossier du programme. </i>
+- Ci dessous le notion de ‘chemin’ se réfère au chemin relatif ayant comme racine le dossier du programme.*
 
-### <b>ls:</b>
-
-<i>ls()</i> liste le contenu d'un dossier
-
-<u>Syntaxe:</u>
-
-```py
-ls(chemin)
-```
-<u>Exemple:</u>
+récupérer le contenu d’un dossier
 
 ```py
 print(cy.ls("/"))
 ```
-
-### <b>version</b>
-
-<i>version()</i> retourne la version de cytron.
-
-<u>Syntaxe:</u>
-
-```py
-version()
-```
-<u>Exemple:</u>
+récupérer la version de cytron
 
 ```py
 print(cy.version())
 ```
 
-### <b>path</b>
-
-<i>path</i> retourne le chemin que cytron utilise comme root.
-
-<u>Syntaxe:</u>
-
-```py
-path()
-```
-<u>Exemple:</u>
+récupérer le chemin que cytron utilise comme root
 
 ```py
 print(cy.path())
 ```
-
-### <b>mkdir</b>
-
-<i>mkdir</i> crée des dossiers.
-
-<u>Syntaxe:</u>
-
-```py
-mkdir(chemin, nom)
-```
-<u>Exemple:</u>
+créer un dossier
 
 ```py
 cy.mkdir("/", "coucou")
 ```
 
-### <b>mkfil</b>
-
-<i>mkfil</i> crée des fichiers.
-
-<u>Syntaxe:</u>
-
-```py
-mkfil(chemin, nom, ContenuDuFichier)
-```
-<u>Exemple:</u>
+créer un fichier.
 
 ```py
 cy.mkfil("/", "livre.txt","Il était un fois une clé usb...")
 ```
 
-### <b>rfil</b>
+## rfil
 
-<i>rfil_rela</i> retourne le contenu de fichiers.
-
-<u>Syntaxe:</u>
-
-```py
-rfil_rela(chemin, nom):
-```
-<u>Exemple:</u>
+récupérer le contenu d’un fichier
 
 ```py
 print(cy.rfil_rela("/", "livre.txt"))
 ```
 
-### <b>wget</b>
+## wget
 
-<i>wget</i> va comme <i>mkfil</i> crée des fichier mais cette fois avec du contenu recupéré de page web.
-
-<u>Syntaxe:</u>
-
-```py
-wget(chemin, nom, url):
-```
-<u>Exemple:</u>
+écrire dans un fichier depuis une URL
 
 ```py
 cy.mkfil("/", "telechargement.ica", "https://raw.githubusercontent.com/passemblage/I-python-Public/main/appli%20ica/telechargement.ica")
 ```
 
-## <b> Terminal intégré </b>
+# POO (cy 15)
 
-Cytron possède aussi un terminal intégré accessible avec <i>console()</i>.
+création de l'objet
+```py
+data = cy.File("/", "data.txt")
+```
+
+écriture dans le fichier
+```py
+data.make("sandwich = 1")
+```
+
+recuperration du contenu du fichier
+
+```py
+print(data)
+```
+
+ecriture dans le fichier depuis une URL
+
+```py
+data.wget("https://www.google.com/")
+```
+
+# Terminal intégré
+
+Cytron possède aussi un terminal intégré accessible avec *console()*.
 se petit programme de 4 ligne l'utilise pour créé un petit terminal simplement
 
 ```py
@@ -130,7 +92,7 @@ while True:
     pass
 ```
 
-la fontion <i>run</i> permet aussi d'executé une commande:
+la fontion *run* permet aussi d'executé une commande:
 
 
 <u>Syntaxe:</u>
@@ -163,18 +125,8 @@ rfil    > affiche le contenue d'un fichier
 aide    > affiche l'aide
 ```
 
-## <b> Programme utilisant cytron </b>
+**Bonne chance et amusé vous bien!**
 
-Quelque programme déjà utilise cytron comme I-python
+Mon serveur discord: http://pf4.ddns.net/discord
 
-<img src="doc/ip.png">
-
-ou terminal tools
-
-<img src="doc/tt.png">
-
-<b>Bonne chance et amusé vous bien!</b>
-
-Mon serveur discord: https://discord.gg/PFbymQ3d97
-
-<i>-pf4 </i>
+*-pf4*
