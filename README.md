@@ -40,15 +40,11 @@ créer un fichier.
 cy.mkfil("/", "livre.txt","Il était un fois une clé usb...")
 ```
 
-## rfil
-
 récupérer le contenu d’un fichier
 
 ```py
 print(cy.rfil_rela("/", "livre.txt"))
 ```
-
-## wget
 
 écrire dans un fichier depuis une URL
 
