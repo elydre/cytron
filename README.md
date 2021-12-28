@@ -82,10 +82,7 @@ Cytron possède aussi un terminal intégré accessible avec *console()*.
 se petit programme de 4 ligne l'utilise pour créé un petit terminal simplement
 
 ```py
-import cytron as cy
 cy.console()
-while True:
-    pass
 ```
 
 la fontion *run* permet aussi d'executé une commande:
