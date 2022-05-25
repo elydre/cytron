@@ -12,15 +12,15 @@ ___________________________________
  - Licence : GNU GPL v3
 '''
 
-
-import contextlib
 ###########################
 ##                       ##
 ##     IMPORTATIONS      ##
 ##                       ##
 ###########################
 
-import os, sys
+import contextlib
+import os
+import sys
 from urllib.request import urlopen
 
 ###########################

@@ -15,9 +15,8 @@ ___________________________________
 
 import os
 import sys
-
-from urllib.request import urlopen
 from urllib.error import HTTPError
+from urllib.request import urlopen
 
 # chemin de l'installation
 
